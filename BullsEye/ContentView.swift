@@ -41,7 +41,6 @@ struct ContentView: View {
     }
     var body: some View {
         VStack {
-            Spacer()
             Text("BullsEye")
                 .fontWeight(.bold)
                 .font(.title)
@@ -49,8 +48,8 @@ struct ContentView: View {
             HStack {
                 VStack {
                     Rectangle()
-                        .foregroundColor(Color(red: rTarget, green: gTarget, blue: bTarget, opacity: 1.0))
                         .cornerRadius(15)
+                        .foregroundColor(Color(red: rTarget, green: gTarget, blue: bTarget, opacity: 1.0))
                         .padding()
                         .aspectRatio(1.0, contentMode: .fit)
                     
